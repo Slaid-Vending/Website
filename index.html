@@ -3,127 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxury Vending Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <title>Luxury Vending</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #1a1a2e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            text-align: center;
+            background: #16213e;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        .dark-section {
+            background: #e8e8e8;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #ff5733;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background: #ff5733;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .cta-button:hover {
+            background: #c70039;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <a href="/">Luxury Vending</a>
-            <ul>
-                <li><a href="#discover">Discover</a></li>
-                <li><a href="#offerings">Offerings</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-overlay">
-            <h1>ELEVATE <span class="bold">AUTOMATION</span></h1>
-            <p>Redefining the vending experience with unparalleled elegance and innovation</p>
-            <a href="#discover" class="btn">Discover</a>
-        </div>
-    </section>
-
-    <!-- Product Section -->
+    <header>Luxury Vending</header>
+    <nav>
+        <a href="#discover">Discover</a>
+        <a href="#offerings">Offerings</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
     <section id="discover">
-        <h2>THE PINNACLE OF <span class="bold">AUTOMATED RETAIL</span></h2>
-        <p>Our vending machine blends cutting-edge tech with luxury design...</p>
-        <div class="grid">
-            <img src="placeholder.jpg" alt="Luxury Vending Machine">
-            <div class="features">
-                <div><strong>Elegant Design:</strong> Premium materials, customizable finishes</div>
-                <div><strong>Smart Technology:</strong> Touchless payments, inventory tracking</div>
-                <div><strong>Customizable:</strong> Tailor the experience to your brand</div>
-                <div><strong>Analytics:</strong> Real-time consumer insights</div>
-            </div>
-        </div>
-        <a href="#offerings" class="btn">Explore Offerings</a>
+        <h2>Elevate Automation</h2>
+        <p>Redefining the vending experience with <span class="highlight">luxury</span> and innovation.</p>
+        <a href="#offerings" class="cta-button">Explore Offerings</a>
     </section>
-
-    <!-- Offerings -->
+    
+    <section class="dark-section">
+        <h2>The Pinnacle of Automated Retail</h2>
+        <p>Our vending machine blends <span class="highlight">cutting-edge</span> tech with luxury design.</p>
+        <img src="machine.jpg" alt="Luxury Vending Machine">
+    </section>
+    
     <section id="offerings">
-        <h2>FLEXIBLE <span class="bold">SOLUTIONS</span></h2>
+        <h2>Flexible Solutions</h2>
         <p>Choose the best option for your business.</p>
-        <div class="offerings-container">
-            <div class="card">
-                <h3>Purchase</h3>
-                <p>Own a premium vending machine with full customization and support.</p>
-                <ul>
-                    <li>Full ownership</li>
-                    <li>Customized to your brand</li>
-                    <li>Maintenance packages available</li>
-                </ul>
-                <a href="#contact" class="btn">Inquire Now</a>
-            </div>
-            <div class="card">
-                <h3>Host</h3>
-                <p>Provide space and earn revenue without upfront costs.</p>
-                <ul>
-                    <li>Zero investment</li>
-                    <li>Revenue sharing</li>
-                    <li>We handle restocking</li>
-                </ul>
-                <a href="#contact" class="btn">Partner With Us</a>
-            </div>
-        </div>
+        <ul>
+            <li>Full ownership</li>
+            <li>Customized to your brand</li>
+            <li>Maintenance packages available</li>
+        </ul>
+        <a href="#contact" class="cta-button">Inquire Now</a>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>GET IN <span class="bold">TOUCH</span></h2>
-        <p>Fill out the form, and we’ll reach out to you.</p>
-        <form id="contact-form">
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="company">Company Name</label>
-                <input type="text" id="company" name="company">
-            </div>
-            <div class="form-group">
-                <label>I'm interested in:</label>
-                <input type="radio" id="purchase" name="interest" value="purchase" checked>
-                <label for="purchase">Purchasing</label>
-                <input type="radio" id="host" name="interest" value="host">
-                <label for="host">Hosting</label>
-                <input type="radio" id="other" name="interest" value="other">
-                <label for="other">Other</label>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" placeholder="Your message..."></textarea>
-            </div>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© Luxury Vending Solutions. All rights reserved.</p>
+    
+    <footer style="background: #1a1a2e; color: white; text-align: center; padding: 20px;">
+        &copy; 2025 Luxury Vending - All Rights Reserved
     </footer>
-
-    <script>
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-            alert("Message sent. We'll be in touch shortly.");
-            this.reset();
-        });
-    </script>
-
 </body>
 </html>
