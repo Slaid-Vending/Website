@@ -3,82 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        h2 {
-            text-align: center;
-        }
-        form {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        label {
-            font-weight: bold;
-            display: block;
-            margin-top: 10px;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .radio-group {
-            display: flex;
-            gap: 10px;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            margin-top: 15px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #218838;
-        }
-    </style>
+    <title>Luxury Vending Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/mnnpzyge" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone">
-        
-        <label for="company">Company:</label>
-        <input type="text" id="company" name="company">
-        
-        <label for="interest">Interest:</label>
-        <div class="radio-group">
-            <input type="radio" id="purchase" name="interest" value="purchase" checked>
-            <label for="purchase">Purchase</label>
-            <input type="radio" id="inquiry" name="interest" value="inquiry">
-            <label for="inquiry">Inquiry</label>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a href="/">Luxury Vending</a>
+            <ul>
+                <li><a href="#discover">Discover</a></li>
+                <li><a href="#offerings">Offerings</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-overlay">
+            <h1>ELEVATE <span class="bold">AUTOMATION</span></h1>
+            <p>Redefining the vending experience with unparalleled elegance and innovation</p>
+            <a href="#discover" class="btn">Discover</a>
         </div>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        
-        <button type="submit">Send Message</button>
-    </form>
+    </section>
+
+    <!-- Product Section -->
+    <section id="discover">
+        <h2>THE PINNACLE OF <span class="bold">AUTOMATED RETAIL</span></h2>
+        <p>Our vending machine blends cutting-edge tech with luxury design...</p>
+        <div class="grid">
+            <img src="placeholder.jpg" alt="Luxury Vending Machine">
+            <div class="features">
+                <div><strong>Elegant Design:</strong> Premium materials, customizable finishes</div>
+                <div><strong>Smart Technology:</strong> Touchless payments, inventory tracking</div>
+                <div><strong>Customizable:</strong> Tailor the experience to your brand</div>
+                <div><strong>Analytics:</strong> Real-time consumer insights</div>
+            </div>
+        </div>
+        <a href="#offerings" class="btn">Explore Offerings</a>
+    </section>
+
+    <!-- Offerings -->
+    <section id="offerings">
+        <h2>FLEXIBLE <span class="bold">SOLUTIONS</span></h2>
+        <p>Choose the best option for your business.</p>
+        <div class="offerings-container">
+            <div class="card">
+                <h3>Purchase</h3>
+                <p>Own a premium vending machine with full customization and support.</p>
+                <ul>
+                    <li>Full ownership</li>
+                    <li>Customized to your brand</li>
+                    <li>Maintenance packages available</li>
+                </ul>
+                <a href="#contact" class="btn">Inquire Now</a>
+            </div>
+            <div class="card">
+                <h3>Host</h3>
+                <p>Provide space and earn revenue without upfront costs.</p>
+                <ul>
+                    <li>Zero investment</li>
+                    <li>Revenue sharing</li>
+                    <li>We handle restocking</li>
+                </ul>
+                <a href="#contact" class="btn">Partner With Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>GET IN <span class="bold">TOUCH</span></h2>
+        <p>Fill out the form, and we’ll reach out to you.</p>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company">
+            </div>
+            <div class="form-group">
+                <label>I'm interested in:</label>
+                <input type="radio" id="purchase" name="interest" value="purchase" checked>
+                <label for="purchase">Purchasing</label>
+                <input type="radio" id="host" name="interest" value="host">
+                <label for="host">Hosting</label>
+                <input type="radio" id="other" name="interest" value="other">
+                <label for="other">Other</label>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your message..."></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© Luxury Vending Solutions. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Message sent. We'll be in touch shortly.");
+            this.reset();
+        });
+    </script>
+
 </body>
 </html>
