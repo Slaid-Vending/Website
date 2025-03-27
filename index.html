@@ -3,97 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxury Vending</title>
+    <title>Luxury Vending Machine</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            color: #333;
+            box-sizing: border-box;
         }
-        header {
-            background: #1a1a2e;
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #8a7142 90%, #5d4c2c 90%);
             color: white;
-            padding: 20px;
             text-align: center;
-            font-size: 24px;
-            font-weight: bold;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-        nav {
-            text-align: center;
-            background: #16213e;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        section {
-            padding: 50px;
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
         }
-        .dark-section {
-            background: #e8e8e8;
+        .hero img {
+            position: absolute;
+            width: 60%;
+            opacity: 0.3;
+        }
+        h1 {
+            font-size: 3rem;
         }
         .highlight {
             font-weight: bold;
-            color: #ff5733;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
         }
         .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
             margin-top: 20px;
-            background: #ff5733;
+            padding: 15px 30px;
+            font-size: 1.2rem;
             color: white;
-            text-decoration: none;
+            background: black;
+            border: none;
+            cursor: pointer;
             border-radius: 5px;
-            font-size: 18px;
+            transition: 0.3s;
         }
         .cta-button:hover {
-            background: #c70039;
+            background: #333;
         }
     </style>
 </head>
 <body>
-    <header>Luxury Vending</header>
-    <nav>
-        <a href="#discover">Discover</a>
-        <a href="#offerings">Offerings</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    
-    <section id="discover">
-        <h2>Elevate Automation</h2>
-        <p>Redefining the vending experience with <span class="highlight">luxury</span> and innovation.</p>
-        <a href="#offerings" class="cta-button">Explore Offerings</a>
+    <section class="hero">
+        <img src="vending-machine.png" alt="Luxury Vending Machine">
+        <h1>ELEVATE <span class="highlight">AUTOMATION</span></h1>
+        <button class="cta-button">Get Yours Now</button>
     </section>
-    
-    <section class="dark-section">
-        <h2>The Pinnacle of Automated Retail</h2>
-        <p>Our vending machine blends <span class="highlight">cutting-edge</span> tech with luxury design.</p>
-        <img src="machine.jpg" alt="Luxury Vending Machine">
-    </section>
-    
-    <section id="offerings">
-        <h2>Flexible Solutions</h2>
-        <p>Choose the best option for your business.</p>
-        <ul>
-            <li>Full ownership</li>
-            <li>Customized to your brand</li>
-            <li>Maintenance packages available</li>
-        </ul>
-        <a href="#contact" class="cta-button">Inquire Now</a>
-    </section>
-    
-    <footer style="background: #1a1a2e; color: white; text-align: center; padding: 20px;">
-        &copy; 2025 Luxury Vending - All Rights Reserved
-    </footer>
 </body>
 </html>
